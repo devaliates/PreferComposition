@@ -1,0 +1,59 @@
+﻿<Window x:Class="PreferCompositionWPF.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:PreferCompositionWPF.ViewModels"
+        mc:Ignorable="d"
+        Title="MainView" Height="479" Width="304">
+    <Window.DataContext>
+        <viewModels:MainViewModel/>
+    </Window.DataContext>
+    <StackPanel>
+        <TextBox
+            Text="{Binding Kullanici.Ad}"/>
+        <TextBox
+            Text="{Binding Kullanici.Soyad}"/>
+        <TextBox
+            Text="{Binding Kullanici.KullaniciAdi}"/>
+        <TextBox
+            Text="{Binding Kullanici.Parola}"/>
+        <TextBox
+            Text="{Binding Kullanici.Ad}"/>
+        <TextBox
+            Text="{Binding Kullanici.Soyad}"/>
+        <TextBox
+            Text="{Binding Kullanici.KullaniciAdi}"/>
+        <TextBox
+            Text="{Binding Kullanici.Parola}"/>
+
+        <Label
+            Content="Kişi"/>
+        <TextBox
+            Text="{Binding Kisi.Ad}"/>
+        <TextBox
+            Text="{Binding Kisi.Soyad}"/>
+
+        <Label
+            Content="Admin"/>
+        <TextBox
+            Text="{Binding Admin.Ad}"/>
+        <TextBox
+            Text="{Binding Admin.Soyad}"/>
+        <TextBox
+            Text="{Binding Admin.KullaniciAdi}"/>
+        <TextBox
+            Text="{Binding Admin.Parola}"/>
+
+        <Label
+            Content="Admin Kopya"/>
+        <TextBox
+            Text="{Binding Admin.Ad}"/>
+        <TextBox
+            Text="{Binding Admin.Soyad}"/>
+        <TextBox
+            Text="{Binding Admin.KullaniciAdi}"/>
+        <TextBox
+            Text="{Binding Admin.Parola}"/>
+    </StackPanel>
+</Window>
